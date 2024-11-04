@@ -5,3 +5,5 @@ if [[ $VERCEL_ENV == "production" ]]; then
 else
     bun run build:preview
 fi
+bun seed
+./server

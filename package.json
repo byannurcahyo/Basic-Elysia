@@ -5,7 +5,7 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "bun run --watch src/index.ts",
         "seed": "bun prisma/seed.ts",
-        "build:production": "bun build",
+        "build:production": "bun build --compile --minify-whitespace --minify-syntax --target bun --outfile server ./src/index.ts",
         "build:preview": "bun build --mode preview"
     },
     "dependencies": {
